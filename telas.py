@@ -59,31 +59,7 @@ def exibir_erro_excluir_produto(e):
         "|                       TENTE NOVAMENTE !                     |\n"
         )
     
-def exibir_erro_caracter_voltar_menu():
-    print(
-        "+-------------------------------------------------------------+\n"
-        "|       V A L O R    I N S E R I D O     I N V Á L I D O  !   |\n"
-        "+-------------------------------------------------------------+\n"
-        "|                                                             |\n"
-        "|   Digite [S] de SIM para visualizar a tabela de produtos    |\n"
-        "|   Digite [N] de NÃO para voltar para o menu principal       |\n"
-        "|                      Tente novamente !                      |\n"
-        "+-------------------------------------------------------------+\n"
-    )
-
-def exibir_erro_caracter_escolha_ver_tabela():
-    print(
-        "+-------------------------------------------------------------+\n"
-        "|       V A L O R    I N S E R I D O     I N V Á L I D O  !   |\n"
-        "+-------------------------------------------------------------+\n"
-        "|                                                             |\n"
-        "|   Digite [S] de SIM para visualizar a tabela de produtos    |\n"
-        "|   Digite [N] de NÃO para voltar para o menu principal       |\n"
-        "|                      Tente novamente !                      |\n"
-        "+-------------------------------------------------------------+\n"
-    )
-
-def exibir_erro_caracter_editar():
+def exibir_erro_inserido_invalido():
     print(
         "+-------------------------------------------------------------+\n"
         "|       V A L O R    I N S E R I D O     I N V Á L I D O  !   |\n"

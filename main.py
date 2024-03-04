@@ -102,7 +102,8 @@ def continuar_editando(): # Função que pergunta ao usuário se ele deseja cont
         limpar_tela()
         menu_principal()
     else:
-        erro_caracter_editar()
+        telas.exibir_erro_inserido_invalido
+        continuar_editando()
 
 def escolha_ver_produtos(): # Assim que usuário modificar a tabela ele será redirecionado para essa função.
     resposta_usuario = input("| Deseja ver os produtos ? [S] / [N] :")
@@ -113,7 +114,8 @@ def escolha_ver_produtos(): # Assim que usuário modificar a tabela ele será re
         limpar_tela()
         menu_principal()
     else:
-        erro_caracter_escolha_ver_tabela()
+        telas.exibir_erro_inserido_invalido()
+        escolha_ver_produtos()
 
 def escolha_voltar_menu(): # Assim que o usuário visualizar a tabela ele será redirecionado para essa função.
     resposta_usuario = input("| Deseja voltar para o menu ? [S]/[N] :")
@@ -124,22 +126,8 @@ def escolha_voltar_menu(): # Assim que o usuário visualizar a tabela ele será 
         limpar_tela()
         saida()
     else:
-        erro_caracter_voltar_menu()
-
-def erro_caracter_voltar_menu():
-    limpar_tela()
-    telas.exibir_erro_caracter_voltar_menu()
-    escolha_voltar_menu()
-
-def erro_caracter_escolha_ver_tabela(): 
-    limpar_tela()
-    telas.exibir_erro_caracter_escolha_ver_tabela()
-    escolha_ver_produtos()
-
-def erro_caracter_editar(): 
-    limpar_tela()
-    telas.exibir_erro_caracter_editar()
-    continuar_editando()
+        telas.exibir_erro_inserido_invalido()
+        escolha_voltar_menu()
 
 def exibir_cabecalho_novo_produto():
     telas.exibir_adiciando_produto()
